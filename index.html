@@ -50,7 +50,42 @@
                 id="htmlCode1"
                 placeholder="Write your HTML here..."
                 rows="5"
-              ></textarea>
+              >
+
+               <!DOCTYPE html>
+               <html lang="en">
+               <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               </head>
+               <body>
+                <div style="padding-top: 90px; display: flex; justify-content: center">
+                  <!-- Container utama untuk form login -->
+                  <div class="login-container">
+                    <h2>Login</h2>
+                    <!-- Form login, method POST digunakan untuk mengirim data secara aman -->
+                    <form action="/login" method="POST">
+                      <!-- Input username -->
+                      <label for="username">Username:</label>
+                      <input type="text" id="username" name="username" required />
+                      <!-- Input password -->
+                      <label for="password">Password:</label>
+                      <input type="password" id="password" name="password" required />
+                      <!-- Tombol submit dan reset -->
+                      <div class="button-group">
+                        <input type="submit" value="Login" />
+                        <input type="reset" value="Reset" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+          
+              </body>
+               </html>
+                  
+              
+                  
+              </textarea>
             </div>
 
             <!-- CSS Editor -->
@@ -60,7 +95,86 @@
                 id="cssCode1"
                 placeholder="Write your CSS here..."
                 rows="5"
-              ></textarea>
+              >
+                
+                <style>
+                  /* Pengaturan tampilan body agar form berada di tengah halaman */
+            
+                  /* Pengaturan container form login */
+                  .login-container {
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    width: 100%;
+                    max-width: 400px; /* Atur ukuran maksimum agar form tidak terlalu lebar */
+                    margin-top: 20px;
+                  }
+            
+                  /* Pengaturan judul form */
+                  .login-container h2 {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 24px;
+                    color: #333;
+                  }
+            
+                  /* Pengaturan input text dan password */
+                  .login-container input[type="text"],
+                  .login-container input[type="password"] {
+                    width: 100%;
+                    padding: 12px;
+                    margin: 8px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 16px;
+                  }
+            
+                  /* Pengaturan tombol submit dan reset */
+                  .login-container input[type="submit"],
+                  .login-container input[type="reset"] {
+                    width: 48%;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: #4caf50;
+                    color: white;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    font-size: 16px;
+                  }
+            
+                  /* Pengaturan warna tombol reset (warna merah) */
+                  .login-container input[type="reset"] {
+                    background-color: #d4af37;
+                  }
+            
+                  /* Efek hover saat tombol diklik */
+                  .login-container input[type="submit"]:hover,
+                  .login-container input[type="reset"]:hover {
+                    opacity: 0.9;
+                  }
+            
+                  /* Pengaturan layout tombol login dan reset agar sejajar */
+                  .login-container .button-group {
+                    display: flex;
+                    justify-content: space-between;
+                  }
+            
+                  /* Menambahkan margin pada bagian bawah form untuk spacing */
+                  .login-container form {
+                    margin-bottom: 10px;
+                  }
+            
+                  /* Mengatur tampilan header agar tetap rapi */
+                  .container {
+                    width: 100%;
+                  }
+                  
+                </style>
+
+              ></textarea
+              >
             </div>
 
             <!-- JavaScript Editor -->
